@@ -34,5 +34,25 @@ class Ui:
                 print("Opção inválida. Tente novamente.")
 
     def menu_entity_one(self):
-        print("\n===== TEMA DA EQUIPE =====")
-        print("= Entidade do Estudante ==")
+        print("\n===== Universo =====")
+        print("0 - Sair")
+        print("1 - Cadastrar galaxia ==")
+
+        option = input("Escolha uma opção: ")
+        
+        if option == "0":
+            print("Saindo...")
+            show()
+            break
+            
+        elif option == "1"
+            def create(self):    
+            nome = input("Nome: ")
+            qtdEstela = input("Quantidade estrela: ")
+            tipo = input("Tipo: ")
+            habitavel = input("Habitável? (s/n): ")
+                try:
+                    galaxia_id = self.service.create(nome, qtdEstela, tipo, habitavel)
+                    print(f"Cadastrado com ID {galaxia_id}.")
+                except ValueError as erro:
+                    print(f"Erro: {erro}")
