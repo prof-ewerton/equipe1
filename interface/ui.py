@@ -45,14 +45,14 @@ class Ui:
             show()
             break
             
-        elif option == "1"
+        elif option == "1":
             def create(self):    
-            nome = input("Nome: ")
-            qtdEstela = input("Quantidade estrela: ")
-            tipo = input("Tipo: ")
-            habitavel = input("Habitável? (s/n): ")
+                nome = input("Nome: ")
+                qtdEstela = input("Quantidade estrela: ")
+                tipo = input("Tipo: ")
+                habitavel = input("Habitável? (s/n): ")
                 try:
                     galaxia_id = self.service.create(nome, qtdEstela, tipo, habitavel)
                     print(f"Cadastrado com ID {galaxia_id}.")
-                except ValueError as erro:
-                    print(f"Erro: {erro}")
+                    except ValueError as erro:
+                        print(f"Erro: {erro}")
