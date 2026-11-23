@@ -1,5 +1,5 @@
-from entities/astronauta.py import Astronauta
-from database/insatll.py import install
+from entities.astronauta import Astronauta
+from database.insatll import install
 
 def create(self, nome, idade, emMissao, especialidade ):
     if not nome.strip(): 

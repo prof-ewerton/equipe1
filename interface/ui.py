@@ -1,4 +1,5 @@
-from service/astronautas_service.py import create
+from services.astronautas_service import create
+from services.galaxia_service import create
 
 class Ui:
 
@@ -24,7 +25,7 @@ class Ui:
             if option == "0":
                 print("Encerrando...")
                 break
-            elif option == "1"
+            elif option == "1":
                 menu_entity_one()
                 break
 
@@ -44,20 +45,20 @@ class Ui:
         print("== Astronautas ==")
         print("0 - Sair")
         print("1 - Cadastrar astronauta")
+        print("2 - Cadastrar galaxia")
         
         option = input("Escolha uma opção: ")
         
         if option == "0":
             print("Saindo...")
             show()
-            break
             
-        elif option == "1"
+        elif option == "1":
             def create(self):
-            nome = input("Nome: ")
-            idade = input("Idade: ")
-            emMissao = input("Em missão: ")
-            especialidade = input("Especialidade: ")
+                nome = input("Nome: ")
+                idade = input("Idade: ")
+                emMissao = input("Em missão: ")
+                especialidade = input("Especialidade: ")
             
             try:
                 astronauta_id = self.astronautas_service.create(nome, idade, emMissao, especialidade)
@@ -65,3 +66,15 @@ class Ui:
             except ValueError as erro:
                 print(f"Erro: {erro}")
         
+        elif option == "2":
+            def create(self):    
+                nome = input("Nome: ")
+                qtdEstela = input("Quantidade estrela: ")
+                tipo = input("Tipo: ")
+                habitavel = input("Habitável? (s/n): ")
+                
+            try:
+                galaxia_id = self.service.create(nome, qtdEstela, tipo, habitavel)
+                print(f"Cadastrado com ID {galaxia_id}.")
+            except ValueError as erro:
+                print(f"Erro: {erro}")
