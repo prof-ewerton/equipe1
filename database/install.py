@@ -37,6 +37,13 @@ def install():
                                     ("Felipe" 21, True, "estrelas")]
             cursor.executemany("INSERT INTO astronautas (nome, idade, emMissao, especialidade) VALUES (?, ?, ?, ?)", astrounautas_iniciais)     
         
+        
+        def create(self, astronauta):
+            cursor.execute("""
+                INSERT INTO astronautas (nome, idade, emMissao, especialidade)
+                VALUES (?, ?, ?) """, (astronauta.nome, astronauta.idade, astronauta.emMissao, astronauta.especialidade))
+            return cursor.lastrowid
+            
         def create(self, galaxia):
             cursor.execute("""
                 INSERT INTO VALUES itens (
