@@ -1,4 +1,4 @@
-from database.connection import get_db_connection
+from database.connection import get_connection
 
 def install():
     connection = get_connection()
@@ -14,9 +14,6 @@ def install():
             )
         """)
         
-        connection.commit()
-        finally:
-            connection.close()
-
-if __name__ == "__main__":
-    install()
+        connection.commit("Conexao com o banco de dados estabelecida")
+    finally:
+        connection.close()
