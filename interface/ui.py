@@ -1,25 +1,31 @@
+from service/astronautas_service.py import create
+
 class Ui:
 
     def __init__(self):
 
         self.MENU_OPTIONS = [
-            (1, "Entity one", self.menu_entity_one),
+            (1, "Astronautas", self.menu_entity_one),
         ]
 
     def show(self):
         while True:
-            print("\n===== TEMA DA EQUIPE =====")
+            print("\n===== Universo =====")
 
             # Exibe as opções dinamicamente
             for number, description, action in self.MENU_OPTIONS:
                 print(f"{number} - {description}")
 
             print("0 - Sair")
+            print("1 - Astronauta")
 
             option = input("Escolha uma opção: ")
 
             if option == "0":
                 print("Encerrando...")
+                break
+            elif option == "1"
+                menu_entity_one()
                 break
 
             selected = False
@@ -34,5 +40,28 @@ class Ui:
                 print("Opção inválida. Tente novamente.")
 
     def menu_entity_one(self):
-        print("\n===== TEMA DA EQUIPE =====")
-        print("= Entidade do Estudante ==")
+        print("\n===== Universo =====")
+        print("== Astronautas ==")
+        print("0 - Sair")
+        print("1 - Cadastrar astronauta")
+        
+        option = input("Escolha uma opção: ")
+        
+        if option == "0":
+            print("Saindo...")
+            show()
+            break
+            
+        elif option == "1"
+            def create(self):
+            nome = input("Nome: ")
+            idade = input("Idade: ")
+            emMissao = input("Em missão: ")
+            especialidade = input("Especialidade: ")
+            
+            try:
+                astronauta_id = self.astronautas_service.create(nome, idade, emMissao, especialidade)
+                print(f"Cadastrado realizado com ID {item_id}.")
+            except ValueError as erro:
+                print(f"Erro: {erro}")
+        
