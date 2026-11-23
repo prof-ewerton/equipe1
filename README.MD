@@ -28,5 +28,6 @@ A funcionalidade deverá:
 7. Validar se o valor digitado para o atributo de categoria corresponde exatamente a uma das três opções permitidas, rejeitando valores incorretos ou com erros de digitação.
 8. Persistir o registro no banco de dados e informar ao usuário se o cadastro foi realizado com sucesso.
 
-##Entidades
+Organização equipe/entidades:
+- galaxia: nome (String): quantidade estrelas (Int), habitavel sim ou nao (Bool), tipo (String) - Ediene
 - astronauta nome, midade, emMissão, especialidade (Natália)
