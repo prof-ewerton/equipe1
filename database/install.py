@@ -55,7 +55,17 @@ def install():
                  )
              """, (galaxia.nome, galaxia.qtdEstrela, galaxia.tipo, galaxia.habitavel))
             
+<<<<<<< HEAD
             connection.commit()
+=======
+        def create(self, galaxia):
+            cursor.execute("""
+                INSERT INTO galaxias (nome, qtdEstela, tipo, habitavel)
+                VALUES (?, ?, ?) """, (galaxia.nome, galaxia.qtdEstrela, galaxia.tipo, galaxia.habitavel))
+            return cursor.lastrowid
+        
+        connection.commit()
+>>>>>>> ediene/feature/galaxia
     finally:
         connection.close()        
 
