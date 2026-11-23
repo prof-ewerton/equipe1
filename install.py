@@ -14,6 +14,14 @@ def install():
             )
         """)
         
+        cursor.execute("SELECT COUNT(*) FROM astronautas")
+        if cursor.fetchone()[0] == 0:
+            astronautas_iniciais = [("Natalia", 19, True, "luas"),
+                                    ("Ediene", 22, False, "planetas"),
+                                    ("Jamili", 21, True, "cometas"),]
+            cursor.executemany(
+                "INSERT INTO astronautas (nome, idade, emMissao, especialidade) VALUES (?, ?, ?, ?)", astrounautas_iniciais)
+        
         connection.commit("Conexao com o banco de dados estabelecida")
     finally:
         connection.close()
