@@ -31,3 +31,4 @@ A funcionalidade deverá:
 Organização equipe/entidades:
 - galaxia: nome (String): quantidade estrelas (Int), habitavel sim ou nao (Bool), tipo (String) - Ediene
 - astronauta nome, midade, emMissão, especialidade (Natália)
+- planeta nome(string), quantidadeLuas(Int), habitavel sim ou nao (Bool), tipo (string)
