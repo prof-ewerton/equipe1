@@ -29,5 +29,5 @@ A funcionalidade deverá:
 8. Persistir o registro no banco de dados e informar ao usuário se o cadastro foi realizado com sucesso.
 
 Organização equipe/entidades:
-- galaxia: nome (String): quantidade estrelas (Int), habitavel sim ou nao (Bool), tipo (String)
+- galaxia: nome (String): quantidade estrelas (Int), habitavel sim ou nao (Bool), tipo (String) - Ediene
 - astronauta nome, midade, emMissão, especialidade (Natália)
