@@ -32,7 +32,9 @@ def install():
         if cursor.fetchone()[0] == 0:
             astronautas_iniciais = [("Natalia", 19, True, "luas"),
                                     ("Ediene", 22, False, "planetas"),
-                                    ("Jamili", 21, True, "cometas"),]
+                                    ("Jamili", 21, True, "cometas"),
+                                    ("Lucas", 20, False, "buracos negros"),
+                                    ("Felipe" 21, True, "estrelas")]
             cursor.executemany("INSERT INTO astronautas (nome, idade, emMissao, especialidade) VALUES (?, ?, ?, ?)", astrounautas_iniciais)     
         
         def create(self, galaxia):
